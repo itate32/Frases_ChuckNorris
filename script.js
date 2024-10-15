@@ -1,4 +1,4 @@
-//Función para obtener una frase aleatoria desde la API.
+//Función asíncrona para obtener una frase aleatoria desde la API.
 async function obtenerFrase() {
     try {
         //Hacemos la solicitud a la API
@@ -43,8 +43,10 @@ async function traducirFrase(fraseIngles) {
         console.error(error);
     }
 }
-//Ejecutamos la función al cargar la página.
-obtenerFrase();
 
 //Obtener una frase al presionar el botón.
 document.getElementById('nuevaFrase').addEventListener('click', obtenerFrase);
+
+//Ejecutamos la función al cargar la página.
+obtenerFrase();
+
