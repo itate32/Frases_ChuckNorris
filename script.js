@@ -33,7 +33,6 @@ async function traducirFrase(fraseIngles) {
             throw new Error('Error en la solicitud de traducción: + respuesta.statusText');
         }
 
-
         const datos = await respuesta.json();
 
         //Mostramos la frase traducida en el DOM.
